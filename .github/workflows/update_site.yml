@@ -1,0 +1,44 @@
+name: Fetch data and update site
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '20 */2 * * *'
+
+
+jobs:
+  update_site:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        cache: 'pip'
+
+    - run: pip3 install -r requirements.txt
+
+    - run: rm index.html *.json
+
+    - run: python3 index_data.py
+      env:
+        IFSX_AUTH_TOKEN: ${{ secrets.IFSX_AUTH_TOKEN }}
+        IOCX_AUTH_TOKEN: ${{ secrets.IOCX_AUTH_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}
+
+    - name: Push new data to site
+      run: | 
+
+        git config --global user.name 'update bot'
+        git config --global user.email 'update-bot@localhost'
+        git config --global branch.autoSetupMerge always
+        git config --global core.mergeoptions --no-edit
+        git config --global pull.rebase false
+
+        git add index.html *.json
+        git commit -m "site update"
+        git pull
+        git push 
