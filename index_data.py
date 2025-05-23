@@ -314,11 +314,15 @@ def main():
 	print("done getting EUVD details:", time.time()-lstart)
 
 	euvd_cves = {} # euvd:cve
+	euvd_aliases = {}
 	for euvd in euvd_details:
 		# print('aliases:',euvd_details[euvd]["aliases"])
 		# aliases = [ x for x in euvd_details[euvd]["aliases"].split("\n") if "CVE" in x]
 		aliases = []
 		if euvd_details.get(euvd) != None:
+			euvd_aliases[euvd] =  euvd_details[euvd]["aliases"].split('\n')
+			if '' in euvd_aliases[euvd]:
+				euvd_aliases[euvd].remove('')
 			for a in euvd_details[euvd]["aliases"].split('\n'):
 				if "CVE" in a:
 					aliases.append(a)
@@ -356,6 +360,7 @@ def main():
 		euvd_feed[euvd]['description'] = "N/A"
 		euvd_feed[euvd]['repos'] = euvd_repos[euvd]
 		euvd_feed[euvd]['updated'] = None
+		euvd_feed[euvd]['aliases'] = ','.join(euvd_aliases[euvd])
 
 		for post in euvd_posts[euvd]:
 			# filter using created_at for recent days only

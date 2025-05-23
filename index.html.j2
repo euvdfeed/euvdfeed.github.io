@@ -268,6 +268,11 @@
 			<h4 class=epss>EPSS: {{ "%.2f"|format(data[euvd]['epss']) }}%</h4>
 			{% endif %}
 
+			{% if data[euvd]['aliases'] != None %}
+			<p class=aliases>aliases: {{ data[euvd]['aliases'] }}</p>
+			{% endif %}
+
+
 			{% if data[euvd]['updated'] != None %}
 			<p>updated <span class=updated>{{data[euvd]['updated']}}</span></p>
 			{% endif %}
