@@ -38,7 +38,7 @@
 	  
 	  width: 30vw;
 	  height: 30vw;
-	  border: 2px solid #36c183;
+	  border: 2px solid gold;
 /*	  background:teal;*/
 /*	  counter-increment:divs;*/
 	  min-height:10vw;
@@ -51,7 +51,7 @@
 	}
 
 	div.highlighted {
-		border: 3px solid #ffdf00;
+		border: 3px solid white;
 	}
 
 
@@ -276,7 +276,7 @@
 
 			<p class=description>
 			 {% if data[euvd]['description'] %}
-			 		<th>{{ escape(data[euvd]['description'][0:400]) }}</th>
+			 		<th>{{ escape(data[euvd]['description']) }}</th>
 			 	{% else %}
 			 		<th>N/A</th>
 			 	{% endif %}
