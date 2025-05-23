@@ -38,7 +38,7 @@
 	  
 	  width: 30vw;
 	  height: 30vw;
-	  border: 2px solid #36c183;
+	  border: 2px solid gold;
 /*	  background:teal;*/
 /*	  counter-increment:divs;*/
 	  min-height:10vw;
@@ -51,7 +51,7 @@
 	}
 
 	div.highlighted {
-		border: 3px solid #ffdf00;
+		border: 3px solid white;
 	}
 
 
@@ -190,7 +190,7 @@
 
 
 <body>
-<p>Fediverse EUVD feed updated at UTC 2025-05-23T20:55:49.767424</p>
+<p>Fediverse EUVD feed updated at UTC 2025-05-23T20:59:10.318692</p>
 
 <p><a target=_blank href=euvd_feed.json>Access data as JSON</a></p>
 
@@ -530,7 +530,7 @@ strlen() call (accounting for the terminating NUL char).</td>
 
 			<p class=description>
 			 
-			 		<th>A vulnerability, which was classified as very critical, was found in Netgear DGND3700 1.1.00.15_1.00.15NA. This affects an unknown part of the file /BRS_top.html of the component Basic Authentication. The manipulation leads to improper authentication. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Other products might be affected as we</th>
+			 		<th>A vulnerability, which was classified as very critical, was found in Netgear DGND3700 1.1.00.15_1.00.15NA. This affects an unknown part of the file /BRS_top.html of the component Basic Authentication. The manipulation leads to improper authentication. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Other products might be affected as well. The vendor was contacted early about this disclosure.</th>
 			 	
 
 			</p>
@@ -696,7 +696,8 @@ of: module: add buffer overflow check in of_modalias()
 In of_modalias(), if the buffer happens to be too small even for the 1st
 snprintf() call, the len parameter will become negative and str parameter
 (if not NULL initially) will point beyond the buffer&#x27;s end. Add the buffer
-overflow check after the 1st snprintf() call and fix </th>
+overflow check after the 1st snprintf() call and fix such check after the
+strlen() call (accounting for the terminating NUL char).</th>
 			 	
 
 			</p>
