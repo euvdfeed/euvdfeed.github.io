@@ -21,7 +21,7 @@ jobs:
 
     - run: pip3 install -r requirements.txt
 
-    - run: rm index.html *.json
+    - run: rm index.html *.json || echo nothing to remove
 
     - run: python3 index_data.py
       env:
@@ -38,7 +38,7 @@ jobs:
         git config --global core.mergeoptions --no-edit
         git config --global pull.rebase false
 
-        git add index.html *.json
+        git add index.html *.json || echo nothing to remove
         git commit -m "site update"
         git pull
         git push 
