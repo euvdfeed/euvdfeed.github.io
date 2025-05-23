@@ -23,7 +23,7 @@
 		color: #ff7bf7;
 	}
 
-	#cves {
+	#euvds {
 	  
 	  margin: auto;
 	  display: grid;
@@ -34,7 +34,7 @@
 	  
 	}
 
-	div.cve {
+	div.euvd {
 	  
 	  width: 30vw;
 	  height: 30vw;
@@ -55,7 +55,7 @@
 	}
 
 
-	div.cveheader {
+	div.euvdheader {
 /*		height: 50%;*/
 		min-height: 30%;
 		overflow: scroll;
@@ -67,7 +67,7 @@
 
 	@media only screen and (max-width: 768px) {
 
-		#cves {
+		#euvds {
 	  
 		  margin: auto;
 		  display: grid;
@@ -80,7 +80,7 @@
 		  
 		}
 
-	  div.cve {
+	  div.euvd {
 		  width: 80vw;
 		  height: 80vw;
 		  border: 2px solid #36c183;
@@ -197,9 +197,9 @@
 <p><input id=filterbox onkeypress="filterPress(event)" placeholder="keyword / year / .."> <button id=filterbutton onclick="filterBugs()">filter</button></p>
 
 <section id=index>
-	<table id=cvetable>
+	<table id=euvdtable>
 		<tr>
-		    <th onclick="sortTable(0)" class=cvetable-entry>EUVD</th>
+		    <th onclick="sortTable(0)" class=euvdtable-entry>EUVD</th>
 		    <th onclick="sortTable(1)">Score</th>
 		    <th onclick="sortTable(2)">EPSS</th>
 		    <th onclick="sortTable(3)">Posts</th>
@@ -209,36 +209,36 @@
 		    <th onclick="sortTable(7)">Description</th>
 		</tr>
 
-		{% for cve in data %}
+		{% for euvd in data %}
 		<tr>
-			<td><a class="{{ data[cve]['severity'] }}" href="#{{cve}}" onclick="highlight('{{cve}}')">{{cve}}</a></td>
+			<td><a class="{{ data[euvd]['severity'] }}" href="#{{euvd}}" onclick="highlight('{{euvd}}')">{{euvd}}</a></td>
 
-			<td class={{ data[cve]['severity'] }}> {{ data[cve]['basescore'] }} </td>
+			<td class={{ data[euvd]['severity'] }}> {{ data[euvd]['basescore'] }} </td>
 
-			{% if data[cve]['epss'] != None %}
-				<td class={{ data[cve]['epss_severity'] }}>{{ "%.2f"|format(data[cve]['epss']) }}%</td>
+			{% if data[euvd]['epss'] != None %}
+				<td class={{ data[euvd]['epss_severity'] }}>{{ "%.2f"|format(data[euvd]['epss']) }}%</td>
 			{% else %}
 				<td>N/A</td>
 			{% endif %}
 
-			<td>{{ data[cve]['posts']|length  }}</td>
-			<td>{{ data[cve]['repos']|length  }}</td>
+			<td>{{ data[euvd]['posts']|length  }}</td>
+			<td>{{ data[euvd]['repos']|length  }}</td>
 
-			{% if data[cve]['nuclei'] %}
-			<td><a target=_blank href={{data[cve]['nuclei']}}>template</a></td>
+			{% if data[euvd]['nuclei'] %}
+			<td><a target=_blank href={{data[euvd]['nuclei']}}>template</a></td>
 			{% else %}
 				<td></td>
 			{% endif %}
 
-			{% if data[cve]['updated'] %}
-			<td>{{data[cve]['updated']}}</td>
+			{% if data[euvd]['updated'] %}
+			<td>{{data[euvd]['updated']}}</td>
 			{% else %}
 				<td></td>
 			{% endif %}
 
-			{% if data[cve]['description'] %}
-				{#<td>{{ escape(data[cve]['description'][0:80]) }}</td>#}
-				<td>{{ escape(data[cve]['description']) }}</td>
+			{% if data[euvd]['description'] %}
+				{#<td>{{ escape(data[euvd]['description'][0:80]) }}</td>#}
+				<td>{{ escape(data[euvd]['description']) }}</td>
 			{% else %}
 				<td>N/A</td>
 			{% endif %}
@@ -251,43 +251,43 @@
 	</table>
 </section>
 
-<section id=cves>
-{% for cve in data %}
-	<div class="cve" id="{{cve}}">
+<section id=euvds>
+{% for euvd in data %}
+	<div class="euvd" id="{{euvd}}">
 
-		<div class='cveheader'>
+		<div class='euvdheader'>
 			
 			
-			{% if data[cve]['basescore'] != None %}
-			<h3 class={{ data[cve]['severity'] }}><a class="{{ data[cve]['severity'] }}" target=_blank href=https://nvd.nist.gov/vuln/detail/{{ cve }}>{{ cve }}</a><br>({{ data[cve]['basescore'] }} {{ data[cve]['severity'] }})</h3>
+			{% if data[euvd]['basescore'] != None %}
+			<h3 class={{ data[euvd]['severity'] }}><a class="{{ data[euvd]['severity'] }}" target=_blank href=https://euvd.enisa.europa.eu/enisa/{{ euvd }}>{{ euvd }}</a><br>({{ data[euvd]['basescore'] }} {{ data[euvd]['severity'] }})</h3>
 			{% else %}
-			<h3 class="UNKNOWN"><a a class="UNKNOWN" target=_blank href=https://nvd.nist.gov/vuln/detail/{{ cve }}>{{ cve }}</a><span class="UNKNOWN cvss">(CVSS UNKNOWN)</span></h3>
+			<h3 class="UNKNOWN"><a a class="UNKNOWN" target=_blank href=https://euvd.enisa.europa.eu/enisa/{{ euvd }}>{{ euvd }}</a><span class="UNKNOWN cvss">(CVSS UNKNOWN)</span></h3>
 			{% endif %}
 
-			{% if data[cve]['epss'] != None %}
-			<h4 class=epss>EPSS: {{ "%.2f"|format(data[cve]['epss']) }}%</h4>
+			{% if data[euvd]['epss'] != None %}
+			<h4 class=epss>EPSS: {{ "%.2f"|format(data[euvd]['epss']) }}%</h4>
 			{% endif %}
 
-			{% if data[cve]['updated'] != None %}
-			<p>updated <span class=updated>{{data[cve]['updated']}}</span></p>
+			{% if data[euvd]['updated'] != None %}
+			<p>updated <span class=updated>{{data[euvd]['updated']}}</span></p>
 			{% endif %}
 
-			<p class=numposts>{{ data[cve]['posts']|length  }} posts</p>
+			<p class=numposts>{{ data[euvd]['posts']|length  }} posts</p>
 
 			<p class=description>
-			 {% if data[cve]['description'] %}
-			 		<th>{{ escape(data[cve]['description'][0:400]) }}</th>
+			 {% if data[euvd]['description'] %}
+			 		<th>{{ escape(data[euvd]['description'][0:400]) }}</th>
 			 	{% else %}
 			 		<th>N/A</th>
 			 	{% endif %}
 
 			</p>
-			{% if data[cve]['nuclei'] %}
-			<p><a target=_blank href={{data[cve]['nuclei']}}>Nuclei template</a></p>
+			{% if data[euvd]['nuclei'] %}
+			<p><a target=_blank href={{data[euvd]['nuclei']}}>Nuclei template</a></p>
 			{% endif %}
-			{% if data[cve]['repos']|length > 0 %}
-				<p>{{ data[cve]['repos']|length  }} repos</p>
-				{% for url in data[cve]['repos'] %}
+			{% if data[euvd]['repos']|length > 0 %}
+				<p>{{ data[euvd]['repos']|length  }} repos</p>
+				{% for url in data[euvd]['repos'] %}
 					<p><a class=repo target=_blank href="{{url}}">{{ url }}</a></p>
 				{% endfor %}
 			{% endif %}
@@ -297,7 +297,7 @@
 
 		<div class="posts">
 
-			{%  for post in data[cve]['posts'] %}
+			{%  for post in data[euvd]['posts'] %}
 				<a target=_blank href={{post['account']['url']}}>{{ post['account']['acct'] }}</a>
 				<a class=posturl target=_blank href={{post['url']}}>at {{post['created_at']}}</a>
 <md-block>
@@ -324,7 +324,7 @@ document.getElementById("filterbox").placeholder = new Date().getFullYear();
 function filterBugs() {
 	var keyword = document.getElementById("filterbox").value.toLowerCase();
 
-	table = document.getElementById("cvetable");
+	table = document.getElementById("euvdtable");
 	rows = table.rows;
 	for (i = 1; i < (rows.length - 1); i++) {
 			if (!rows[i].textContent.toLowerCase().includes(keyword)) {
@@ -335,13 +335,13 @@ function filterBugs() {
 	}
 
 	// filter the info boxes as well
-	var cveboxes = document.getElementsByClassName("cve");
-	for (i = 0; i < (cveboxes.length - 1); i++) {
-			// only filter via cveheader box, otherwise year numbers wont work nicely since timestamps of fedi posts include recent year number
-			if (!cveboxes[i].children[0].textContent.toLowerCase().includes(keyword)) {
-				cveboxes[i].style.display = 'none';
+	var euvdboxes = document.getElementsByClassName("euvd");
+	for (i = 0; i < (euvdboxes.length - 1); i++) {
+			// only filter via euvdheader box, otherwise year numbers wont work nicely since timestamps of fedi posts include recent year number
+			if (!euvdboxes[i].children[0].textContent.toLowerCase().includes(keyword)) {
+				euvdboxes[i].style.display = 'none';
 			} else {
-				cveboxes[i].style.display = '';
+				euvdboxes[i].style.display = '';
 			}
 	}
 
@@ -360,7 +360,7 @@ function isNumber(element) {
 
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("cvetable");
+  table = document.getElementById("euvdtable");
   switching = true;
   // Set the sorting direction to ascending:
   dir = "asc";
@@ -444,15 +444,15 @@ function sortTable(n) {
   }
 }
 
-function highlight(cve) {
+function highlight(euvd) {
 	// remove all highlights
 	for (var element of document.getElementsByClassName("highlighted")) {
 		element.classList.remove("highlighted");
 	}
 
-	console.log(cve);
+	console.log(euvd);
 	// set chosen class
-	document.getElementById(cve).classList.add("highlighted");
+	document.getElementById(euvd).classList.add("highlighted");
 
 }
 
