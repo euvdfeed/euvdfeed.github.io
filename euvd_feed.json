@@ -74,7 +74,7 @@
     ],
     "description": "An authentication bypass vulnerability\u00a0exists in HPE StoreOnce Software.",
     "repos": [],
-    "updated": "Jun 2, 2025, 6:30:50 PM",
+    "updated": "Jun 3, 2025, 3:55:22 AM",
     "aliases": "CVE-2025-37093"
   },
   "EUVD-2025-6367": {
