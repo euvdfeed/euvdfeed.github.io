@@ -104,7 +104,7 @@
           "avatar_static": "https://media.infosec.exchange/infosec.exchange/cache/accounts/avatars/110/463/531/345/346/064/original/45c39d7e15c3742e.png",
           "header": "https://assets.infosec.exchange/headers/original/missing.png",
           "header_static": "https://assets.infosec.exchange/headers/original/missing.png",
-          "followers_count": 1175,
+          "followers_count": 1188,
           "following_count": 6,
           "statuses_count": 117,
           "last_status_at": "2025-06-03",
@@ -114,12 +114,12 @@
             {
               "name": "Gpg4win",
               "value": "<a href=\"https://gpg4win.org/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">gpg4win.org/</span><span class=\"invisible\"></span></a>",
-              "verified_at": "2025-05-26T19:41:58.639+00:00"
+              "verified_at": "2025-06-03T09:48:39.086+00:00"
             },
             {
               "name": "GnuPG",
               "value": "<a href=\"https://gnupg.org/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">gnupg.org/</span><span class=\"invisible\"></span></a>",
-              "verified_at": "2025-05-26T19:41:58.720+00:00"
+              "verified_at": "2025-06-03T09:48:39.161+00:00"
             },
             {
               "name": "currently operated by",
