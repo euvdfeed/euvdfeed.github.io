@@ -156,7 +156,7 @@
           "avatar_static": "https://files.ioc.exchange/cache/accounts/avatars/110/464/115/660/513/195/original/6d09e56d4655d0a4.png",
           "header": "https://ioc.exchange/headers/original/missing.png",
           "header_static": "https://ioc.exchange/headers/original/missing.png",
-          "followers_count": 1175,
+          "followers_count": 1188,
           "following_count": 6,
           "statuses_count": 117,
           "last_status_at": "2025-06-03",
@@ -166,12 +166,12 @@
             {
               "name": "Gpg4win",
               "value": "<a href=\"https://gpg4win.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">gpg4win.org/</span><span class=\"invisible\"></span></a>",
-              "verified_at": "2025-05-26T20:18:37.137+00:00"
+              "verified_at": "2025-06-03T12:10:20.444+00:00"
             },
             {
               "name": "GnuPG",
               "value": "<a href=\"https://gnupg.org/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">gnupg.org/</span><span class=\"invisible\"></span></a>",
-              "verified_at": "2025-05-26T20:18:38.169+00:00"
+              "verified_at": "2025-06-03T12:10:21.378+00:00"
             },
             {
               "name": "currently operated by",
