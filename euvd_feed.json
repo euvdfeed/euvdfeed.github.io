@@ -28,7 +28,7 @@
           "header_static": "https://media.infosec.exchange/infosec.exchange/accounts/headers/110/560/511/618/170/134/original/0ea00c0f4d590488.png",
           "followers_count": 459,
           "following_count": 565,
-          "statuses_count": 666,
+          "statuses_count": 647,
           "last_status_at": "2025-06-07",
           "hide_collections": true,
           "noindex": true,
@@ -61,7 +61,7 @@
           "header_static": "https://files.ioc.exchange/cache/accounts/headers/110/560/587/680/388/288/original/8834107ee7550573.png",
           "followers_count": 452,
           "following_count": 565,
-          "statuses_count": 666,
+          "statuses_count": 648,
           "last_status_at": "2025-06-07",
           "hide_collections": true,
           "emojis": [],
@@ -192,8 +192,8 @@
     ],
     "description": "An out of bounds write exists in FreeType versions 2.13.0 and below (newer versions of FreeType are not vulnerable) when attempting to parse font subglyph structures related to TrueType GX and variable font files. The vulnerable code assigns a signed short value to an unsigned long and then adds a static value causing it to wrap around and allocate too small of a heap buffer. The code then writes up to 6 signed long integers out of bounds relative to this buffer. This may result in arbitrary code execution. This vulnerability may have been exploited in the wild.",
     "repos": [
-      "https://github.com/ov3rf1ow/CVE-2025-27363",
-      "https://github.com/zhuowei/CVE-2025-27363-proof-of-concept"
+      "https://github.com/zhuowei/CVE-2025-27363-proof-of-concept",
+      "https://github.com/ov3rf1ow/CVE-2025-27363"
     ],
     "updated": "May 7, 2025, 12:31:34 AM",
     "aliases": "CVE-2025-27363"
