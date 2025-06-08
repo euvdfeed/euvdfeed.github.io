@@ -3,7 +3,7 @@
     "basescore": 9.8,
     "cve": "CVE-2025-37093",
     "severity": "CRITICAL",
-    "epss": 6.0,
+    "epss": 7.000000000000001,
     "epss_severity": "LOW",
     "nuclei": null,
     "posts": [
