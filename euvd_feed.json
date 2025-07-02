@@ -1,1 +1,88 @@
-{}
+{
+  "EUVD-2025-19673": {
+    "basescore": 9.3,
+    "cve": "CVE-2025-32463",
+    "severity": "CRITICAL",
+    "epss": 0.0,
+    "epss_severity": "LOW",
+    "nuclei": null,
+    "posts": [
+      {
+        "account": {
+          "id": "110517838833661771",
+          "username": "RecoveredExpert",
+          "acct": "RecoveredExpert@mastodon.social",
+          "display_name": "Recovered Expert",
+          "locked": false,
+          "bot": false,
+          "discoverable": true,
+          "indexable": true,
+          "group": false,
+          "created_at": "2023-01-28T00:00:00.000Z",
+          "note": "<p>Tech person, started with software but specialized in large scale networking, the moving bits around the globe type.<br>Pro science. I block nazis and people spreading their BS &amp; hate without warning.<br>Mac and FreeBSD user by choice.</p><p>Posts in English and German. They might contain sarcasm at times.</p>",
+          "url": "https://mastodon.social/@RecoveredExpert",
+          "uri": "https://mastodon.social/users/RecoveredExpert",
+          "avatar": "https://media.infosec.exchange/infosec.exchange/cache/accounts/avatars/110/517/838/833/661/771/original/1a6bd23b80221177.jpeg",
+          "avatar_static": "https://media.infosec.exchange/infosec.exchange/cache/accounts/avatars/110/517/838/833/661/771/original/1a6bd23b80221177.jpeg",
+          "header": "https://media.infosec.exchange/infosec.exchange/cache/accounts/headers/110/517/838/833/661/771/original/84022f6c30d1ebfc.jpg",
+          "header_static": "https://media.infosec.exchange/infosec.exchange/cache/accounts/headers/110/517/838/833/661/771/original/84022f6c30d1ebfc.jpg",
+          "followers_count": 347,
+          "following_count": 728,
+          "statuses_count": 17654,
+          "last_status_at": "2025-07-02",
+          "hide_collections": false,
+          "emojis": [],
+          "fields": []
+        },
+        "url": "https://mastodon.social/@RecoveredExpert/114783829562650056",
+        "content": "<p>\u201eSudo before 1.9.17p1 allows local users to obtain root access because /etc/nsswitch.conf from a user-controlled directory is used with the --chroot option.\u201c<br><a href=\"https://euvd.enisa.europa.eu/vulnerability/EUVD-2025-19673\" rel=\"nofollow noopener\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">euvd.enisa.europa.eu/vulnerabi</span><span class=\"invisible\">lity/EUVD-2025-19673</span></a></p><p>You should update sudo.</p><p>You also might want to think about using an alternative to sudo, considering its high level of complexity in code and configuration.<br>\u201edoas\u201c is much leaner in both code and configuration, which helps to avoid certain problems.</p><p><a href=\"https://github.com/slicer69/doas/\" rel=\"nofollow noopener\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"\">github.com/slicer69/doas/</span><span class=\"invisible\"></span></a><br><a href=\"https://mastodon.social/tags/Unix\" class=\"mention hashtag\" rel=\"nofollow noopener\" target=\"_blank\">#<span>Unix</span></a> <a href=\"https://mastodon.social/tags/Security\" class=\"mention hashtag\" rel=\"nofollow noopener\" target=\"_blank\">#<span>Security</span></a> <a href=\"https://mastodon.social/tags/CVE_2025_32463\" class=\"mention hashtag\" rel=\"nofollow noopener\" target=\"_blank\">#<span>CVE_2025_32463</span></a></p>",
+        "created_at": "2025-07-02T13:17:23.000Z"
+      },
+      {
+        "account": {
+          "id": "110517838882552431",
+          "username": "RecoveredExpert",
+          "acct": "RecoveredExpert@mastodon.social",
+          "display_name": "Recovered Expert",
+          "locked": false,
+          "bot": false,
+          "discoverable": true,
+          "indexable": true,
+          "group": false,
+          "created_at": "2023-01-28T00:00:00.000Z",
+          "note": "<p>Tech person, started with software but specialized in large scale networking, the moving bits around the globe type.<br>Pro science. I block nazis and people spreading their BS &amp; hate without warning.<br>Mac and FreeBSD user by choice.</p><p>Posts in English and German. They might contain sarcasm at times.</p>",
+          "url": "https://mastodon.social/@RecoveredExpert",
+          "uri": "https://mastodon.social/users/RecoveredExpert",
+          "avatar": "https://files.ioc.exchange/cache/accounts/avatars/110/517/838/882/552/431/original/79d1373ae9956ef2.jpeg",
+          "avatar_static": "https://files.ioc.exchange/cache/accounts/avatars/110/517/838/882/552/431/original/79d1373ae9956ef2.jpeg",
+          "header": "https://files.ioc.exchange/cache/accounts/headers/110/517/838/882/552/431/original/65b30f5c3e173deb.jpg",
+          "header_static": "https://files.ioc.exchange/cache/accounts/headers/110/517/838/882/552/431/original/65b30f5c3e173deb.jpg",
+          "followers_count": 347,
+          "following_count": 728,
+          "statuses_count": 17672,
+          "last_status_at": "2025-07-02",
+          "hide_collections": false,
+          "emojis": [],
+          "fields": []
+        },
+        "url": "https://mastodon.social/@RecoveredExpert/114783829562650056",
+        "content": "<p>\u201eSudo before 1.9.17p1 allows local users to obtain root access because /etc/nsswitch.conf from a user-controlled directory is used with the --chroot option.\u201c<br><a href=\"https://euvd.enisa.europa.eu/vulnerability/EUVD-2025-19673\" rel=\"nofollow noopener noreferrer\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">euvd.enisa.europa.eu/vulnerabi</span><span class=\"invisible\">lity/EUVD-2025-19673</span></a></p><p>You should update sudo.</p><p>You also might want to think about using an alternative to sudo, considering its high level of complexity in code and configuration.<br>\u201edoas\u201c is much leaner in both code and configuration, which helps to avoid certain problems.</p><p><a href=\"https://github.com/slicer69/doas/\" rel=\"nofollow noopener noreferrer\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"\">github.com/slicer69/doas/</span><span class=\"invisible\"></span></a><br><a href=\"https://mastodon.social/tags/Unix\" class=\"mention hashtag\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">#<span>Unix</span></a> <a href=\"https://mastodon.social/tags/Security\" class=\"mention hashtag\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">#<span>Security</span></a> <a href=\"https://mastodon.social/tags/CVE_2025_32463\" class=\"mention hashtag\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">#<span>CVE_2025_32463</span></a></p>",
+        "created_at": "2025-07-02T13:17:23.000Z"
+      }
+    ],
+    "description": "Sudo before 1.9.17p1 allows local users to obtain root access because /etc/nsswitch.conf from a user-controlled directory is used with the --chroot option.",
+    "repos": [
+      "https://github.com/K1tt3h/CVE-2025-32463-POC",
+      "https://github.com/4f-kira/CVE-2025-32463",
+      "https://github.com/zhaduchanhzz/CVE-2025-32463_POC",
+      "https://github.com/neko205-mx/CVE-2025-32463_Exploit",
+      "https://github.com/kh4sh3i/CVE-2025-32463",
+      "https://github.com/pr0v3rbs/CVE-2025-32463_chwoot",
+      "https://github.com/Adonijah01/cve-2025-32463-lab",
+      "https://github.com/SysMancer/CVE-2025-32463",
+      "https://github.com/pevinkumar10/CVE-2025-32463"
+    ],
+    "updated": "Jul 1, 2025, 7:58:59 PM",
+    "aliases": "CVE-2025-32463"
+  }
+}
