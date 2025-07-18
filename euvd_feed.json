@@ -28,8 +28,8 @@
           "header_static": "https://media.infosec.exchange/infosec.exchange/accounts/headers/110/560/511/618/170/134/original/0ea00c0f4d590488.png",
           "followers_count": 503,
           "following_count": 564,
-          "statuses_count": 544,
-          "last_status_at": "2025-07-17",
+          "statuses_count": 534,
+          "last_status_at": "2025-07-18",
           "hide_collections": true,
           "noindex": true,
           "emojis": [],
@@ -61,8 +61,8 @@
           "header_static": "https://files.ioc.exchange/cache/accounts/headers/110/560/587/680/388/288/original/8834107ee7550573.png",
           "followers_count": 503,
           "following_count": 564,
-          "statuses_count": 545,
-          "last_status_at": "2025-07-17",
+          "statuses_count": 535,
+          "last_status_at": "2025-07-18",
           "hide_collections": true,
           "emojis": [],
           "fields": []
@@ -74,8 +74,8 @@
     ],
     "description": "The WPBookit plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the image_upload_handle() function hooked via the 'add_booking_type' route in all versions up to, and including, 1.0.4. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "repos": [
-      "https://github.com/Nxploited/CVE-2025-6058",
-      "https://github.com/JayVillain/Scan-CVE-2025-6058"
+      "https://github.com/JayVillain/Scan-CVE-2025-6058",
+      "https://github.com/Nxploited/CVE-2025-6058"
     ],
     "updated": "Jul 14, 2025, 4:01:17 PM",
     "aliases": "CVE-2025-6058"
