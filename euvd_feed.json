@@ -1,4 +1,112 @@
 {
+  "EUVD-2025-21981": {
+    "basescore": 9.8,
+    "cve": "CVE-2025-53770",
+    "severity": "CRITICAL",
+    "epss": 0.0,
+    "epss_severity": "LOW",
+    "nuclei": null,
+    "posts": [
+      {
+        "account": {
+          "id": "27702",
+          "username": "bkastl",
+          "acct": "bkastl@mastodon.social",
+          "display_name": "Bianca Kastl",
+          "locked": false,
+          "bot": false,
+          "discoverable": true,
+          "indexable": true,
+          "group": false,
+          "created_at": "2016-11-02T00:00:00.000Z",
+          "note": "<p>Digital Expert at a german health department, Stuttgart / Frankfurt Germany, writing about webstuff and sometimes her own personal things in life</p>",
+          "url": "https://mastodon.social/@bkastl",
+          "uri": "https://mastodon.social/users/bkastl",
+          "avatar": "https://media.infosec.exchange/infosec.exchange/accounts/avatars/000/027/702/original/38d856150275859b.png",
+          "avatar_static": "https://media.infosec.exchange/infosec.exchange/accounts/avatars/000/027/702/original/38d856150275859b.png",
+          "header": "https://media.infosec.exchange/infosec.exchange/cache/accounts/headers/000/027/702/original/c4b4d67a6d67501a.png",
+          "header_static": "https://media.infosec.exchange/infosec.exchange/cache/accounts/headers/000/027/702/original/c4b4d67a6d67501a.png",
+          "followers_count": 8310,
+          "following_count": 166,
+          "statuses_count": 25573,
+          "last_status_at": "2025-07-20",
+          "hide_collections": false,
+          "emojis": [],
+          "fields": [
+            {
+              "name": "Website",
+              "value": "<a href=\"https://bkastl.de\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">bkastl.de</span><span class=\"invisible\"></span></a>",
+              "verified_at": "2025-07-18T13:54:39.765+00:00"
+            },
+            {
+              "name": "Twitter",
+              "value": "<a href=\"https://twitter.com/bkastl\" rel=\"nofollow noopener\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"\">twitter.com/bkastl</span><span class=\"invisible\"></span></a>",
+              "verified_at": null
+            },
+            {
+              "name": "Pronouns",
+              "value": "she/her",
+              "verified_at": null
+            }
+          ]
+        },
+        "url": "https://mastodon.social/@bkastl/114884778646568550",
+        "content": "<p>\"Betroffen sind offenbar ausschlie\u00dflich On-Prem-Installationen von Microsoft Sharepoint; SharePoint Online in Microsoft 365 ist laut Microsoft nicht anf\u00e4llig. Weitere Erkl\u00e4rungen, wie das kommt, gibt Microsoft nicht.\"</p><p>Mysteri\u00f6s. Kritische L\u00fccken in Sharepoint, die aber nur On-Prem existieren. <br>(EUVD-2025-21981 / CVE-2025-53770)</p><p><a href=\"https://www.heise.de/news/Microsoft-Angriffe-auf-neue-Sharepoint-Luecke-bislang-kein-Patch-verfuegbar-10493705.html\" rel=\"nofollow noopener\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">heise.de/news/Microsoft-Angrif</span><span class=\"invisible\">fe-auf-neue-Sharepoint-Luecke-bislang-kein-Patch-verfuegbar-10493705.html</span></a></p>",
+        "created_at": "2025-07-20T09:10:03.000Z"
+      },
+      {
+        "account": {
+          "id": "16789",
+          "username": "bkastl",
+          "acct": "bkastl@mastodon.social",
+          "display_name": "Bianca Kastl",
+          "locked": false,
+          "bot": false,
+          "discoverable": true,
+          "indexable": true,
+          "group": false,
+          "created_at": "2016-11-02T00:00:00.000Z",
+          "note": "<p>Digital Expert at a german health department, Stuttgart / Frankfurt Germany, writing about webstuff and sometimes her own personal things in life</p>",
+          "url": "https://mastodon.social/@bkastl",
+          "uri": "https://mastodon.social/users/bkastl",
+          "avatar": "https://files.ioc.exchange/accounts/avatars/000/016/789/original/4ea0bbf6ce9c98cc.png",
+          "avatar_static": "https://files.ioc.exchange/accounts/avatars/000/016/789/original/4ea0bbf6ce9c98cc.png",
+          "header": "https://files.ioc.exchange/cache/accounts/headers/000/016/789/original/e2a2e4520d5bbed9.png",
+          "header_static": "https://files.ioc.exchange/cache/accounts/headers/000/016/789/original/e2a2e4520d5bbed9.png",
+          "followers_count": 8314,
+          "following_count": 166,
+          "statuses_count": 25574,
+          "last_status_at": "2025-07-20",
+          "hide_collections": false,
+          "emojis": [],
+          "fields": [
+            {
+              "name": "Website",
+              "value": "<a href=\"https://bkastl.de\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">bkastl.de</span><span class=\"invisible\"></span></a>",
+              "verified_at": "2025-07-19T09:41:51.502+00:00"
+            },
+            {
+              "name": "Twitter",
+              "value": "<a href=\"https://twitter.com/bkastl\" rel=\"nofollow noopener noreferrer\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"\">twitter.com/bkastl</span><span class=\"invisible\"></span></a>",
+              "verified_at": null
+            },
+            {
+              "name": "Pronouns",
+              "value": "she/her",
+              "verified_at": null
+            }
+          ]
+        },
+        "url": "https://mastodon.social/@bkastl/114884778646568550",
+        "content": "<p>\"Betroffen sind offenbar ausschlie\u00dflich On-Prem-Installationen von Microsoft Sharepoint; SharePoint Online in Microsoft 365 ist laut Microsoft nicht anf\u00e4llig. Weitere Erkl\u00e4rungen, wie das kommt, gibt Microsoft nicht.\"</p><p>Mysteri\u00f6s. Kritische L\u00fccken in Sharepoint, die aber nur On-Prem existieren. <br>(EUVD-2025-21981 / CVE-2025-53770)</p><p><a href=\"https://www.heise.de/news/Microsoft-Angriffe-auf-neue-Sharepoint-Luecke-bislang-kein-Patch-verfuegbar-10493705.html\" rel=\"nofollow noopener noreferrer\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">heise.de/news/Microsoft-Angrif</span><span class=\"invisible\">fe-auf-neue-Sharepoint-Luecke-bislang-kein-Patch-verfuegbar-10493705.html</span></a></p>",
+        "created_at": "2025-07-20T09:10:03.000Z"
+      }
+    ],
+    "description": "Deserialization of untrusted data in on-premises Microsoft SharePoint Server allows an unauthorized attacker to execute code over a network.\nMicrosoft is aware that an exploit for CVE-2025-53770 exists in the wild.\nMicrosoft is preparing and fully testing a comprehensive update to address this vulnerability.  In the meantime, please make sure that the mitigation provided in this CVE documentation is in place so that you are protected from exploitation.",
+    "repos": [],
+    "updated": "Jul 20, 2025, 4:12:37 AM",
+    "aliases": "CVE-2025-53770"
+  },
   "EUVD-2025-21201": {
     "basescore": 9.8,
     "cve": "CVE-2025-6058",
