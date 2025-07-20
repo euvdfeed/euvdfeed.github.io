@@ -3,8 +3,8 @@
     "basescore": 9.8,
     "cve": "CVE-2025-53770",
     "severity": "CRITICAL",
-    "epss": 0.0,
-    "epss_severity": "LOW",
+    "epss": 28.000000000000004,
+    "epss_severity": "HIGH",
     "nuclei": null,
     "posts": [
       {
@@ -28,7 +28,7 @@
           "header_static": "https://media.infosec.exchange/infosec.exchange/cache/accounts/headers/000/027/702/original/c4b4d67a6d67501a.png",
           "followers_count": 8317,
           "following_count": 166,
-          "statuses_count": 25575,
+          "statuses_count": 25576,
           "last_status_at": "2025-07-20",
           "hide_collections": false,
           "emojis": [],
@@ -75,7 +75,7 @@
           "header_static": "https://files.ioc.exchange/cache/accounts/headers/000/016/789/original/e2a2e4520d5bbed9.png",
           "followers_count": 8314,
           "following_count": 166,
-          "statuses_count": 25576,
+          "statuses_count": 25577,
           "last_status_at": "2025-07-20",
           "hide_collections": false,
           "emojis": [],
