@@ -105,13 +105,15 @@
     "description": "Deserialization of untrusted data in on-premises Microsoft SharePoint Server allows an unauthorized attacker to execute code over a network.\nMicrosoft is aware that an exploit for CVE-2025-53770 exists in the wild.\nMicrosoft is preparing and fully testing a comprehensive update to address this vulnerability.  In the meantime, please make sure that the mitigation provided in this CVE documentation is in place so that you are protected from exploitation.",
     "repos": [
       "https://github.com/B1ack4sh/Blackash-CVE-2025-53770",
-      "https://github.com/paolokappa/SharePointSecurityMonitor",
-      "https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-sharepoint-cve-2025-53770",
-      "https://github.com/kaizensecurity/CVE-2025-53770",
-      "https://github.com/RukshanaAlikhan/CVE-2025-53770",
       "https://github.com/n1chr0x/ZeroPoint",
+      "https://github.com/kaizensecurity/CVE-2025-53770",
+      "https://github.com/soltanali0/CVE-2025-53770-Exploit",
+      "https://github.com/siag-itsec/CVE-2025-53770-Hunting",
+      "https://github.com/RukshanaAlikhan/CVE-2025-53770",
       "https://github.com/hazcod/CVE-2025-53770",
-      "https://github.com/soltanali0/CVE-2025-53770-Exploit"
+      "https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-sharepoint-cve-2025-53770",
+      "https://github.com/ZephrFish/CVE-2025-53770-Scanner",
+      "https://github.com/paolokappa/SharePointSecurityMonitor"
     ],
     "updated": "Jul 21, 2025, 1:12:19 PM",
     "aliases": "CVE-2025-53770"
@@ -145,7 +147,7 @@
           "header_static": "https://media.infosec.exchange/infosec.exchange/accounts/headers/110/560/511/618/170/134/original/0ea00c0f4d590488.png",
           "followers_count": 507,
           "following_count": 564,
-          "statuses_count": 594,
+          "statuses_count": 602,
           "last_status_at": "2025-07-21",
           "hide_collections": true,
           "noindex": true,
@@ -178,7 +180,7 @@
           "header_static": "https://files.ioc.exchange/cache/accounts/headers/110/560/587/680/388/288/original/8834107ee7550573.png",
           "followers_count": 503,
           "following_count": 564,
-          "statuses_count": 594,
+          "statuses_count": 602,
           "last_status_at": "2025-07-21",
           "hide_collections": true,
           "emojis": [],
@@ -191,8 +193,8 @@
     ],
     "description": "The WPBookit plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the image_upload_handle() function hooked via the 'add_booking_type' route in all versions up to, and including, 1.0.4. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "repos": [
-      "https://github.com/Nxploited/CVE-2025-6058",
-      "https://github.com/JayVillain/Scan-CVE-2025-6058"
+      "https://github.com/JayVillain/Scan-CVE-2025-6058",
+      "https://github.com/Nxploited/CVE-2025-6058"
     ],
     "updated": "Jul 14, 2025, 4:01:17 PM",
     "aliases": "CVE-2025-6058"
