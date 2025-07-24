@@ -152,7 +152,7 @@
     ],
     "description": "An unauthenticated OS command injection vulnerability exists\u00a0in VIGI NVR1104H-4P V1 and VIGI NVR2016H-16MP V2.This issue affects VIGI NVR1104H-4P V1: before 1.1.5 Build 250518; VIGI NVR2016H-16MP V2: before 1.3.1 Build 250407.",
     "repos": [],
-    "updated": "Jul 23, 2025, 4:12:30 PM",
+    "updated": "Jul 24, 2025, 3:55:24 AM",
     "aliases": "CVE-2025-7724"
   },
   "EUVD-2025-21981": {
@@ -184,8 +184,8 @@
           "header_static": "https://media.infosec.exchange/infosec.exchange/cache/accounts/headers/000/027/702/original/c4b4d67a6d67501a.png",
           "followers_count": 8318,
           "following_count": 166,
-          "statuses_count": 25595,
-          "last_status_at": "2025-07-23",
+          "statuses_count": 25596,
+          "last_status_at": "2025-07-24",
           "hide_collections": false,
           "emojis": [],
           "fields": [
@@ -231,8 +231,8 @@
           "header_static": "https://files.ioc.exchange/cache/accounts/headers/000/016/789/original/e2a2e4520d5bbed9.png",
           "followers_count": 8314,
           "following_count": 166,
-          "statuses_count": 25596,
-          "last_status_at": "2025-07-23",
+          "statuses_count": 25597,
+          "last_status_at": "2025-07-24",
           "hide_collections": false,
           "emojis": [],
           "fields": [
