@@ -45,8 +45,8 @@
             },
             {
               "name": "Blog",
-              "value": "<a href=\"https://blog.dhsdevelopments.com\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">blog.dhsdevelopments.com</span><span class=\"invisible\"></span></a>",
-              "verified_at": "2025-08-31T20:02:36.189+00:00"
+              "value": "<a href=\"https://blog.dhsdevelopments.com\" rel=\"nofollow noopener\" translate=\"no\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"\">blog.dhsdevelopments.com</span><span class=\"invisible\"></span></a>",
+              "verified_at": null
             }
           ]
         },
