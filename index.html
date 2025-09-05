@@ -189,7 +189,7 @@
 
 
 <body>
-<p>Fediverse EUVD feed updated at UTC 2025-09-05T12:57:11.525548</p>
+<p>Fediverse EUVD feed updated at UTC 2025-09-05T14:34:33.335771</p>
 
 <p><a target=_blank href=euvd_feed.json>Access data as JSON</a></p>
 
@@ -209,98 +209,11 @@
 		</tr>
 
 		
-		<tr>
-			<td><a class="MEDIUM" href="#EUVD-2025-11051" onclick="highlight('EUVD-2025-11051')">EUVD-2025-11051</a></td>
-
-			<td class=MEDIUM> 5.6 </td>
-
-			
-				<td class=LOW>8.00%</td>
-			
-
-			<td>2</td>
-			<td>0</td>
-
-			
-				<td></td>
-			
-
-			
-			<td>Apr 16, 2025, 3:40:23 PM</td>
-			
-
-			
-				
-				<td>Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: 2D).  Supported versions that are affected are Oracle Java SE: 8u441, 8u441-perf, 11.0.26, 17.0.14, 21.0.6, 24; Oracle GraalVM for JDK: 17.0.14, 21.0.6, 24; Oracle GraalVM Enterprise Edition: 20.3.17 and  21.3.13. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data as well as  unauthorized read access to a subset of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator). CVSS 3.1 Base Score 5.6 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L).</td>
-			
-
-		</tr>
-
-
-		
 
 	</table>
 </section>
 
 <section id=euvds>
-
-	<div class="euvd" id="EUVD-2025-11051">
-
-		<div class='euvdheader'>
-			
-			
-			
-			<h3 class=MEDIUM><a class="MEDIUM" target=_blank href=https://euvd.enisa.europa.eu/enisa/EUVD-2025-11051>EUVD-2025-11051</a><br>(5.6 MEDIUM)</h3>
-			
-
-			
-			<h4 class=epss>EPSS: 8.00%</h4>
-			
-
-			
-			<p class=aliases>aliases: CVE-2025-30698</p>
-			
-
-
-			
-			<p>updated <span class=updated>Apr 16, 2025, 3:40:23 PM</span></p>
-			
-
-			<p class=numposts>2 posts</p>
-
-			<p class=description>
-			 
-			 		<th>Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: 2D).  Supported versions that are affected are Oracle Java SE: 8u441, 8u441-perf, 11.0.26, 17.0.14, 21.0.6, 24; Oracle GraalVM for JDK: 17.0.14, 21.0.6, 24; Oracle GraalVM Enterprise Edition: 20.3.17 and  21.3.13. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data as well as  unauthorized read access to a subset of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator). CVSS 3.1 Base Score 5.6 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L).</th>
-			 	
-
-			</p>
-			
-			
-			
-		
-		</div>
-
-		<div class="posts">
-
-			
-				<a target=_blank href=https://functional.cafe/@loke>loke@functional.cafe</a>
-				<a class=posturl target=_blank href=https://functional.cafe/@loke/115072863383388678>at 2025-08-22T14:22:29.000Z</a>
-<md-block>
-<p>How is it, that in the year of the flying spaghetti monster of 2025, people are still allowed to submit CVE's on Java versions as recent as Java 24, that contains the following text (from <a href="https://euvd.enisa.europa.eu/vulnerability/EUVD-2025-11051" rel="nofollow noopener" target="_blank">EUVD-2025-11051</a> (alternatively CVE-2025-30698)):</p><blockquote><p>This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security.</p></blockquote><p>In case anyone think I'm not being cautious enough, I present to you a quote from <a href="https://openjdk.org/jeps/486" rel="nofollow noopener" target="_blank">JEP 486</a>, which explains why the Java security manager is being removed:</p><blockquote><p>The Security Manager has not been the primary means of securing client-side Java code for many years, it has rarely been used to secure server-side code, and it is costly to maintain. We therefore deprecated it for removal in Java 17 via JEP 411 (2021). As the next step toward removing the Security Manager, we will revise the Java Platform specification so that developers cannot enable it and other Platform classes do not refer to it. This change will have no impact on the vast majority of applications, libraries, and tools. We will remove the Security Manager API in a future release.</p></blockquote><p>Seriously. And people wonder why I don't take the vulnerability ecosystem seriously.</p><p>How many man-years are wasted doing analysis on these kinds of useless reports?</p><p>All projects needs someone like <span class="h-card" translate="no"><a href="https://mastodon.social/@bagder" class="u-url mention" rel="nofollow noopener" target="_blank">@<span>bagder</span></a></span> to keep things serious.</p><p><a href="https://functional.cafe/tags/infosec" class="mention hashtag" rel="nofollow noopener" target="_blank">#<span>infosec</span></a> <a href="https://functional.cafe/tags/cve" class="mention hashtag" rel="nofollow noopener" target="_blank">#<span>cve</span></a></p>
-</md-block>
-			<hr>
-			
-				<a target=_blank href=https://functional.cafe/@loke>loke@functional.cafe</a>
-				<a class=posturl target=_blank href=https://functional.cafe/@loke/115072863383388678>at 2025-08-22T14:22:29.000Z</a>
-<md-block>
-<p>How is it, that in the year of the flying spaghetti monster of 2025, people are still allowed to submit CVE's on Java versions as recent as Java 24, that contains the following text (from <a href="https://euvd.enisa.europa.eu/vulnerability/EUVD-2025-11051" rel="nofollow noopener noreferrer" target="_blank">EUVD-2025-11051</a> (alternatively CVE-2025-30698)):</p><blockquote><p>This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security.</p></blockquote><p>In case anyone think I'm not being cautious enough, I present to you a quote from <a href="https://openjdk.org/jeps/486" rel="nofollow noopener noreferrer" target="_blank">JEP 486</a>, which explains why the Java security manager is being removed:</p><blockquote><p>The Security Manager has not been the primary means of securing client-side Java code for many years, it has rarely been used to secure server-side code, and it is costly to maintain. We therefore deprecated it for removal in Java 17 via JEP 411 (2021). As the next step toward removing the Security Manager, we will revise the Java Platform specification so that developers cannot enable it and other Platform classes do not refer to it. This change will have no impact on the vast majority of applications, libraries, and tools. We will remove the Security Manager API in a future release.</p></blockquote><p>Seriously. And people wonder why I don't take the vulnerability ecosystem seriously.</p><p>How many man-years are wasted doing analysis on these kinds of useless reports?</p><p>All projects needs someone like <span class="h-card" translate="no"><a href="https://mastodon.social/@bagder" class="u-url mention" rel="nofollow noopener noreferrer" target="_blank">@<span>bagder</span></a></span> to keep things serious.</p><p><a href="https://functional.cafe/tags/infosec" class="mention hashtag" rel="nofollow noopener noreferrer" target="_blank">#<span>infosec</span></a> <a href="https://functional.cafe/tags/cve" class="mention hashtag" rel="nofollow noopener noreferrer" target="_blank">#<span>cve</span></a></p>
-</md-block>
-			<hr>
-			
-
-		</div>
-	</div>
-	
 
 
 </section>
